@@ -7,7 +7,8 @@ const MusicList = ( {songs} ) => {
         return (
             <Song name={song['im:name'].label}
                 artist={song['im:artist'].label}
-                key={song.id.attributes['im:id']} />
+                key={song.id.attributes['im:id']}
+                image={song['im:image'][2].label} />
         )
     })
     
@@ -15,7 +16,7 @@ const MusicList = ( {songs} ) => {
     return (
         <ol>
             {songList}
-        </ol>
+        </ol> 
     )
 }
 
