@@ -1,10 +1,14 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
+import MusicList from '../components/MusicList';
 
 class MusicBox extends Component {
 
     render() {
-        return(
-            <p>MusicBox</p>
+        return (
+            <div>
+                <p>MusicBox</p>
+                <MusicList />
+            </div>
         )
     }
 
