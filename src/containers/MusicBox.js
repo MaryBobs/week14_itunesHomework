@@ -22,7 +22,7 @@ class MusicBox extends Component {
     render() {
         return (
             <div>
-                <p>MusicBox</p>
+                <h2>Itunes Top 20</h2>
                 <MusicList songs={this.state.songs}/>
             </div>
         )

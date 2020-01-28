@@ -13,9 +13,9 @@ const MusicList = ( {songs} ) => {
     
 
     return (
-        <>
+        <ol>
             {songList}
-        </>
+        </ol>
     )
 }
 
