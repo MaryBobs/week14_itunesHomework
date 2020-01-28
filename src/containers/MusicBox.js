@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import MusicList from '../components/MusicList';
+import './MusicBox.css'
 
 class MusicBox extends Component {
 
@@ -21,7 +22,7 @@ class MusicBox extends Component {
 
     render() {
         return (
-            <div>
+            <div className='music-box'>
                 <h2>Itunes Top 20</h2>
                 <MusicList songs={this.state.songs}/>
             </div>
