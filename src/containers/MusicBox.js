@@ -15,7 +15,7 @@ class MusicBox extends Component {
 
         fetch(url)
             .then(res => res.json())
-            .then(songs => this.setState({ songs: songs }))
+            .then(songs => this.setState({ songs: songs.feed.entry }))
             .catch(err => console.err());
     }
 
@@ -23,7 +23,7 @@ class MusicBox extends Component {
         return (
             <div>
                 <p>MusicBox</p>
-                <MusicList />
+                <MusicList songs={this.state.songs}/>
             </div>
         )
     }
